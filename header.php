@@ -20,9 +20,9 @@ $lystrup_is_citizen = $lystrup_is_board || (is_user_logged_in() && in_array('lys
 <header class="site-header">
   <div class="wrap lystrup-header-inner">
     <a class="brand" href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html(get_bloginfo('name') ?: 'Lystrup Borgerforening'); ?></a>
-    <details class="lystrup-mobile-nav">
-      <summary aria-label="Åbn eller luk menu"><span class="lystrup-menu-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
-      <nav class="lystrup-nav" aria-label="Hovedmenu">
+    <div class="lystrup-mobile-nav">
+      <button class="lystrup-menu-toggle" type="button" aria-expanded="false" aria-controls="lystrup-main-nav"><span class="lystrup-menu-icon" aria-hidden="true">☰</span><span>Menu</span></button>
+      <nav id="lystrup-main-nav" class="lystrup-nav" aria-label="Hovedmenu">
         <?php if (has_nav_menu('primary')) :
           wp_nav_menu(['theme_location' => 'primary', 'container' => false, 'menu_class' => 'lystrup-menu', 'depth' => 2]);
         else : ?>
@@ -43,6 +43,6 @@ $lystrup_is_citizen = $lystrup_is_board || (is_user_logged_in() && in_array('lys
           <?php endif; ?>
         </div>
       </nav>
-    </details>
+    </div>
   </div>
 </header>
