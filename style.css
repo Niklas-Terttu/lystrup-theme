@@ -3,7 +3,7 @@ Theme Name: Lystrup Forening
 Theme URI: https://github.com/Niklas-Terttu/lystrup-theme
 Author: Lystrup Borgerforening
 Description: Et lyst og tilgængeligt WordPress-tema til Lystrup Borgerforening.
-Version: 0.4.0
+Version: 0.4.1
 Update URI: https://github.com/Niklas-Terttu/lystrup-theme
 Requires at least: 6.4
 Requires PHP: 8.0
@@ -54,3 +54,11 @@ Text Domain: lystrup-theme
  .lystrup-footer-grid{grid-template-columns:1fr 1fr;gap:30px}
 }
 @media(max-width:600px){.brand{font-size:1.07rem}.lystrup-footer-grid{grid-template-columns:1fr}.site-footer{padding-top:38px}}
+
+/* v0.4.1: Desktop navigation must remain visible. Mobile toggles explicitly. */
+.lystrup-menu-toggle{display:none}
+@media(max-width:980px){
+ .lystrup-menu-toggle{display:flex;align-items:center;gap:9px;cursor:pointer;padding:10px 14px;border:1px solid #b9cbbd;border-radius:9px;background:#fff;color:#234d3b;font-weight:700}
+ .lystrup-mobile-nav .lystrup-nav{display:none}
+ .lystrup-mobile-nav.is-open .lystrup-nav{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:12px;padding:16px max(18px,calc((100vw - 1120px)/2));background:#fff;border-bottom:1px solid #dce5dd;box-shadow:0 12px 25px #183b2b15}
+}
