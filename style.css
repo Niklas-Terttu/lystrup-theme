@@ -1,0 +1,11 @@
+/*
+Theme Name: Lystrup Forening
+Theme URI: https://github.com/Niklas-Terttu/lystrup-theme
+Author: Lystrup Borgerforening
+Description: Et lyst og tilgængeligt WordPress-tema til Lystrup Borgerforening.
+Version: 0.1.0
+Requires at least: 6.4
+Requires PHP: 8.0
+Text Domain: lystrup-theme
+*/
+:root{--green:#234d3b;--mint:#e8f0e9;--ink:#1d2923;--cream:#f8f7f2}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--cream);font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.65}a{color:var(--green)}.site-header{background:#fff;border-bottom:1px solid #dce5dd}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:86px;flex-wrap:wrap}.brand{font-size:1.35rem;font-weight:800;text-decoration:none}.nav ul{display:flex;list-style:none;gap:20px;padding:0;flex-wrap:wrap}.nav a{text-decoration:none}.hero{padding:100px 0;background:linear-gradient(130deg,#214b38,#386c50);color:white}.hero h1{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.1;max-width:780px;margin:0 0 24px}.hero p{max-width:620px;font-size:1.2rem}.button,.lystrup-form button{display:inline-block;background:var(--green);color:white;border:0;border-radius:9px;padding:12px 22px;text-decoration:none;cursor:pointer}.hero .button{background:white;color:var(--green)}main{min-height:55vh}.section{padding:64px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}.card{background:#fff;padding:28px;border:1px solid #e2e7e1;border-radius:14px}.site-footer{background:#183b2b;color:#fff;padding:40px 0}.site-footer a{color:#fff}.lystrup-form{max-width:480px;display:grid;gap:16px}.lystrup-form label{display:grid;gap:6px}.lystrup-form input{padding:12px;border:1px solid #9baea0;border-radius:8px}.lystrup-hp{position:absolute;left:-9999px}.content{max-width:850px;padding:54px 0}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #f3b34c;outline-offset:3px}@media(max-width:600px){.nav{padding:14px 0}.hero{padding:65px 0}.nav ul{gap:12px}}
