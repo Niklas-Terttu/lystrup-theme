@@ -1,0 +1,27 @@
+name: Package verified WordPress release
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate version and package
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="${GITHUB_REF_NAME#v}"
+          [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          grep -Fx "Version: $VERSION" style.css
+          mkdir -p "dist/lystrup-theme"
+          rsync -a --exclude='.git' --exclude='.github' --exclude='dist' --exclude='README.md' ./ "dist/lystrup-theme/"
+          test -f "dist/lystrup-theme/style.css"
+          (cd dist && zip -qr "../lystrup-theme.zip" "lystrup-theme")
+      - name: Publish release ZIP
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create "$GITHUB_REF_NAME" "lystrup-theme.zip" --title "$GITHUB_REF_NAME" --generate-notes --verify-tag
