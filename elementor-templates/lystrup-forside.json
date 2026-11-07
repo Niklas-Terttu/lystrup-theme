@@ -1,0 +1,547 @@
+{
+  "version": "0.4",
+  "title": "Lystrup Borgerforening – Forside",
+  "type": "page",
+  "content": [
+    {
+      "id": "lyhero01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1120
+        },
+        "padding": {
+          "unit": "px",
+          "top": 112,
+          "right": 24,
+          "bottom": 112,
+          "left": 24,
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#E9F1E9"
+      },
+      "elements": [
+        {
+          "id": "lyhero02",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Sammen skaber vi et stærkere Lystrup",
+            "header_size": "h1",
+            "title_color": "#234D3B",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 52
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "lyhero03",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Velkommen til Lystrup Borgerforening. Vi samler byen om fællesskab, aktiviteter og projekter, der gør Lystrup til et endnu bedre sted at bo.</p>",
+            "text_color": "#34483B"
+          },
+          "elements": []
+        },
+        {
+          "id": "lyhero04",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Bliv en del af fællesskabet",
+            "link": {
+              "url": "/opret-profil/"
+            },
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#234D3B",
+            "border_radius": {
+              "unit": "px",
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 8,
+              "isLinked": true
+            },
+            "button_padding": {
+              "unit": "px",
+              "top": 14,
+              "right": 24,
+              "bottom": 14,
+              "left": 24,
+              "isLinked": false
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "lyintro1",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1120
+        },
+        "padding": {
+          "unit": "px",
+          "top": 72,
+          "right": 24,
+          "bottom": 72,
+          "left": 24,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "lyintro2",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Et fællesskab for hele Lystrup",
+            "header_size": "h2",
+            "title_color": "#234D3B",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 32
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "lyintro3",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Vi tror på, at de bedste idéer bliver til virkelighed, når vi løfter i flok. Borgerforeningen arbejder for mødesteder, lokale arrangementer og udvikling af vores by.</p>",
+            "text_color": "#34483B"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "lycards1",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1120
+        },
+        "padding": {
+          "unit": "px",
+          "top": 70,
+          "right": 24,
+          "bottom": 70,
+          "left": 24,
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F7F8F4",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 22
+        }
+      },
+      "elements": [
+        {
+          "id": "lycards2",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Det sker i vores by",
+            "header_size": "h2",
+            "title_color": "#234D3B",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 32
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "lycards3",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1120
+            },
+            "padding": {
+              "unit": "px",
+              "top": 28,
+              "right": 28,
+              "bottom": 28,
+              "left": 28,
+              "isLinked": false
+            },
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_radius": {
+              "unit": "px",
+              "top": 14,
+              "right": 14,
+              "bottom": 14,
+              "left": 14,
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "lycards4",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Aktiviteter",
+                "header_size": "h3",
+                "title_color": "#234D3B",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 25
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "lycards5",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Følg med i kommende arrangementer og hyggelige stunder for hele byen.</p>",
+                "text_color": "#34483B"
+              },
+              "elements": []
+            },
+            {
+              "id": "lycards6",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Se aktiviteter",
+                "link": {
+                  "url": "/aktiviteter/"
+                },
+                "button_background_color": "#234D3B",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": 8,
+                  "right": 8,
+                  "bottom": 8,
+                  "left": 8,
+                  "isLinked": true
+                },
+                "button_padding": {
+                  "unit": "px",
+                  "top": 14,
+                  "right": 24,
+                  "bottom": 14,
+                  "left": 24,
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "lycards7",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1120
+            },
+            "padding": {
+              "unit": "px",
+              "top": 28,
+              "right": 28,
+              "bottom": 28,
+              "left": 28,
+              "isLinked": false
+            },
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_radius": {
+              "unit": "px",
+              "top": 14,
+              "right": 14,
+              "bottom": 14,
+              "left": 14,
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "lycards8",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Fælles projekter",
+                "header_size": "h3",
+                "title_color": "#234D3B",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 25
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "lycards9",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Se, hvad vi arbejder på – fra fælles faciliteter til nye muligheder for Lystrup.</p>",
+                "text_color": "#34483B"
+              },
+              "elements": []
+            },
+            {
+              "id": "lycard10",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Se projekter",
+                "link": {
+                  "url": "/projekter/"
+                },
+                "button_background_color": "#234D3B",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": 8,
+                  "right": 8,
+                  "bottom": 8,
+                  "left": 8,
+                  "isLinked": true
+                },
+                "button_padding": {
+                  "unit": "px",
+                  "top": 14,
+                  "right": 24,
+                  "bottom": 14,
+                  "left": 24,
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lyabout1",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1120
+        },
+        "padding": {
+          "unit": "px",
+          "top": 72,
+          "right": 24,
+          "bottom": 72,
+          "left": 24,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "lyabout2",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Hvem står bag?",
+            "header_size": "h2",
+            "title_color": "#234D3B",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 32
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "lyabout3",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Lystrup Borgerforening drives af lokale kræfter, der ønsker at styrke sammenholdet og skabe gode rammer for alle i byen.</p>",
+            "text_color": "#34483B"
+          },
+          "elements": []
+        },
+        {
+          "id": "lyabout4",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Mød bestyrelsen",
+            "link": {
+              "url": "/bestyrelsen/"
+            },
+            "button_background_color": "#234D3B",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+              "unit": "px",
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 8,
+              "isLinked": true
+            },
+            "button_padding": {
+              "unit": "px",
+              "top": 14,
+              "right": 24,
+              "bottom": 14,
+              "left": 24,
+              "isLinked": false
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "lycta001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1120
+        },
+        "padding": {
+          "unit": "px",
+          "top": 75,
+          "right": 24,
+          "bottom": 75,
+          "left": 24,
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#234D3B"
+      },
+      "elements": [
+        {
+          "id": "lycta002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Vil du være med?",
+            "header_size": "h2",
+            "title_color": "#234D3B",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 32
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "lycta003",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Opret en profil for at ansøge om adgang til vores borgerportal. Din ansøgning bliver gennemgået af foreningen.</p>",
+            "text_color": "#34483B"
+          },
+          "elements": []
+        },
+        {
+          "id": "lycta004",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Opret profil",
+            "link": {
+              "url": "/opret-profil/"
+            },
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#234D3B",
+            "border_radius": {
+              "unit": "px",
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 8,
+              "isLinked": true
+            },
+            "button_padding": {
+              "unit": "px",
+              "top": 14,
+              "right": 24,
+              "bottom": 14,
+              "left": 24,
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "lycta005",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Log ind på borgerportalen",
+            "link": {
+              "url": "/borger-login/"
+            },
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#234D3B",
+            "border_radius": {
+              "unit": "px",
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 8,
+              "isLinked": true
+            },
+            "button_padding": {
+              "unit": "px",
+              "top": 14,
+              "right": 24,
+              "bottom": 14,
+              "left": 24,
+              "isLinked": false
+            }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes"
+  }
+}
