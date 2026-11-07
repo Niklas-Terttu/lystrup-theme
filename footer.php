@@ -1,0 +1,1 @@
+<footer class="site-footer"><div class="wrap"><strong>Lystrup Borgerforening</strong><p>Sammen om fællesskabet i Lystrup.</p></div></footer><?php wp_footer(); ?></body></html>
