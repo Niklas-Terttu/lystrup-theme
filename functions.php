@@ -73,3 +73,7 @@ add_filter('body_class', function ($classes) {
 });
 
 require_once __DIR__ . '/inc/github-updates.php';
+
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_script('lystrup-navigation', get_template_directory_uri() . '/assets/js/navigation.js', [], wp_get_theme()->get('Version'), true);
+});
