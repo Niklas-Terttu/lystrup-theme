@@ -30,3 +30,28 @@ add_action('after_switch_theme', function () {
         wp_insert_post(['post_title' => $title, 'post_name' => $slug, 'post_content' => $content, 'post_status' => 'publish', 'post_type' => 'page']);
     }
 });
+
+/**
+ * Manually refresh WordPress theme update metadata.
+ * This does not install unverified GitHub code.
+ */
+add_action('admin_menu', function () {
+    add_theme_page('Lystrup temaopdatering', 'Lystrup: Søg efter opdatering', 'update_themes', 'lystrup-theme-updates', function () {
+        if (!current_user_can('update_themes')) wp_die('Ingen adgang.');
+        echo '<div class="wrap"><h1>Lystrup temaopdatering</h1><p>Kontrollerer tilgængelige opdateringer via WordPress. GitHub-udgivelser kræver separat konfigureret opdateringsintegration.</p>';
+        if (isset($_GET['checked'])) echo '<div class="notice notice-success"><p>Opdateringskontrol gennemført. Se tilgængelige opdateringer under Kontrolpanel → Opdateringer.</p></div>';
+        echo '<form method="post" action="' . esc_url(admin_url('admin-post.php')) . '">';
+        wp_nonce_field('lystrup_theme_check_updates');
+        echo '<input type="hidden" name="action" value="lystrup_theme_check_updates">';
+        submit_button('Søg efter opdatering nu');
+        echo '</form></div>';
+    });
+});
+add_action('admin_post_lystrup_theme_check_updates', function () {
+    if (!current_user_can('update_themes')) wp_die('Ingen adgang.', '', ['response' => 403]);
+    check_admin_referer('lystrup_theme_check_updates');
+    delete_site_transient('update_themes');
+    wp_update_themes();
+    wp_safe_redirect(add_query_arg('checked', '1', admin_url('themes.php?page=lystrup-theme-updates')));
+    exit;
+});
