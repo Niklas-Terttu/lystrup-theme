@@ -55,3 +55,18 @@ add_action('admin_post_lystrup_theme_check_updates', function () {
     wp_safe_redirect(add_query_arg('checked', '1', admin_url('themes.php?page=lystrup-theme-updates')));
     exit;
 });
+
+add_action('after_setup_theme', function () {
+    add_theme_support('elementor');
+    add_theme_support('align-wide');
+    add_theme_support('responsive-embeds');
+});
+add_action('elementor/theme/register_locations', function ($manager) {
+    $manager->register_all_core_location();
+});
+add_filter('body_class', function ($classes) {
+    if (is_singular() && get_post_meta(get_queried_object_id(), '_elementor_edit_mode', true) === 'builder') {
+        $classes[] = 'lystrup-elementor-page';
+    }
+    return $classes;
+});
