@@ -50,6 +50,7 @@ add_action('admin_menu', function () {
 add_action('admin_post_lystrup_theme_check_updates', function () {
     if (!current_user_can('update_themes')) wp_die('Ingen adgang.', '', ['response' => 403]);
     check_admin_referer('lystrup_theme_check_updates');
+    Lystrup_Release_Updates::clear('lystrup-theme');
     delete_site_transient('update_themes');
     wp_update_themes();
     wp_safe_redirect(add_query_arg('checked', '1', admin_url('themes.php?page=lystrup-theme-updates')));
@@ -70,3 +71,5 @@ add_filter('body_class', function ($classes) {
     }
     return $classes;
 });
+
+require_once __DIR__ . '/inc/github-updates.php';
